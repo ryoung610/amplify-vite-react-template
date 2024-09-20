@@ -30,7 +30,7 @@ function App() {
           <h1>Hello {user?.username}</h1>
           <button onClick={signOut}>Sign out</button>
           <main>
-            <h1>My todos</h1>
+            <h1>{user?.signInDetails?.loginId} todos</h1>
             <button onClick={createTodo}>+ new</button>
             <ul>
               {todos.map((todo) => (
